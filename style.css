@@ -2,28 +2,41 @@ body {
  padding: 0px;
  margin: 0px;
  background: #f2f6e9;
-    
+height: 100vh;
 }
-/*--- navigation bar ---*/
-.navbar {
- background:#459EAD;
-    
+
+.topnav {
+  background-color: #459EAD;
+  overflow: hidden;
 }
-.nav-link, .navbar-brand {
- color: #fff;
- cursor: pointer;
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.nav-link {
- margin-right: 1em !important;
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #5EBFEA;
+  color: black;
 }
-.nav-link:hover {
- color: #000;
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #004F5C;
+  color: white;
 }
 
 #main{
     margin-top: 10px;
     margin-left: 3%;
     margin-right: 3%;
+    min-height: 80%;
 }
 
 #photo{
@@ -37,7 +50,7 @@ body {
 }
 
 .formation{
-display: flex;
+    display: flex;
     align-items: center;
 }
 
@@ -84,8 +97,4 @@ display: flex;
 #taser{
     height: 300px;
     width: 500px;
-}
-
-btn btn-primary{
-    bottom: 0;
 }
